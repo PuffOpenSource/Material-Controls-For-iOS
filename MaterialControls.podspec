@@ -1,19 +1,15 @@
-Pod::Spec.new do |s|
-  s.name             = "MaterialControls"
-  s.version          = "1.1.0"
-  s.summary          = "Material Design controls for iOS writen in Objective-C."
+Pod::Spec.new do |spec|
+  spec.name         = 'MaterialControls'
+  spec.version      = '1.2.2'
+  spec.license      = { :type => 'MIT' }
+  spec.homepage     = 'https://github.com/fpt-software/Material-Controls-For-iOS'
+  spec.authors      = { "FPT Software" => "mobility@fsoft.com.vn" }
+  spec.summary      = 'Material Design controls for iOS writen in Objective-C.'
+  spec.source       = { :git => 'https://github.com/fpt-software/Material-Controls-For-iOS.git', :tag => 'v1.2.2' }
 
-  s.homepage         = "https://github.com/fpt-software/Material-Controls-For-iOS"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "FPT Software" => "mobility@fsoft.com.vn" }
-  s.source           = { :git => "https://github.com/fpt-software/Material-Controls-For-iOS.git", :tag => "1.1.0" }
+  spec.ios.deployment_target  = '8.0'
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+  spec.source_files       = 'MaterialControls/**/*.h', 'MaterialControls/**/*.m'
 
-  s.source_files = 'iOSUILib/iOSUILib/**/*'
-  s.resource_bundles = {
-    'MaterialControls' => ['iOSUILib/iOSUILib/*.png']
-  }
+  spec.ios.framework  = 'UIKit', 'CoreGraphics', 'Foundation'
 end

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonView">
+            <connections>
+                <outlet property="FlatButton" destination="UlS-uk-dmB" id="To9-FG-01K"/>
+                <outlet property="FloatingActionButton" destination="6mL-3r-WGe" id="9XV-DM-5xA"/>
+                <outlet property="Label" destination="fQ1-Ga-eY3" id="rwg-jI-K1V"/>
+                <outlet property="RaisedButton" destination="6dX-9w-G8i" id="wmC-iU-PsK"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kCW-yf-GMq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dX-9w-G8i" customClass="MDButton">
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Lzb-RP-z85"/>
+                        <constraint firstAttribute="width" constant="124" id="ulH-VY-wnb"/>
+                    </constraints>
+                    <state key="normal" title="Raised Button">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlS-uk-dmB" customClass="MDButton">
+                    <state key="normal" title="Flat Button">
+                        <color key="titleColor" red="0.15336808562278748" green="0.25700652599334717" blue="0.45838943123817444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mL-3r-WGe" customClass="MDButton">
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="GZ0-LF-anq"/>
+                        <constraint firstAttribute="width" constant="60" id="aNd-S2-T5o"/>
+                    </constraints>
+                    <state key="normal" title="Action">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-Ga-eY3">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fQ1-Ga-eY3" firstAttribute="top" secondItem="6mL-3r-WGe" secondAttribute="bottom" constant="35" id="17J-gt-6Gu"/>
+                <constraint firstItem="UlS-uk-dmB" firstAttribute="top" secondItem="6dX-9w-G8i" secondAttribute="bottom" constant="30" id="SZa-eA-3eM"/>
+                <constraint firstItem="6mL-3r-WGe" firstAttribute="top" secondItem="UlS-uk-dmB" secondAttribute="bottom" constant="35" id="frJ-cf-bj6"/>
+                <constraint firstItem="6dX-9w-G8i" firstAttribute="trailing" secondItem="UlS-uk-dmB" secondAttribute="trailing" id="uaS-95-Bv4"/>
+                <constraint firstItem="6dX-9w-G8i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="98" id="uvv-RZ-j2P"/>
+                <constraint firstItem="6mL-3r-WGe" firstAttribute="centerX" secondItem="fQ1-Ga-eY3" secondAttribute="centerX" id="vqj-qh-9o8"/>
+                <constraint firstItem="UlS-uk-dmB" firstAttribute="centerX" secondItem="6mL-3r-WGe" secondAttribute="centerX" id="wfu-4a-Exn"/>
+                <constraint firstItem="6dX-9w-G8i" firstAttribute="leading" secondItem="UlS-uk-dmB" secondAttribute="leading" id="xr0-a2-WtG"/>
+                <constraint firstItem="6dX-9w-G8i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="zeg-88-Lvb"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
