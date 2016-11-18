@@ -577,8 +577,7 @@
   if (input.isFirstResponder) {
     return [input resignFirstResponder];
   }
-
-  return YES;
+    return YES;
 }
 
 - (BOOL)isFirstResponder {
@@ -644,6 +643,12 @@
   _normalColor = normalColor;
   [_dividerHolder setNormalColor:_normalColor];
   [self updateState];
+}
+
+- (void)setUnifiedBackgroundColor:(UIColor*)color {
+    self.labelView.backgroundColor = color;
+    self.textView.backgroundColor = color;
+    self.textField.backgroundColor = color;
 }
 
 - (void)setHighlightColor:(UIColor *)highlightColor {

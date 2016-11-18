@@ -86,6 +86,7 @@ IB_DESIGNABLE
 @property(null_unspecified, nonatomic) IBInspectable UIColor *disabledColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *textColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *hintColor;
+@property(null_unspecified, nonatomic) UIColor *unifiedBackgroundColor;
 
 @property(nonatomic, getter=isEnabled) IBInspectable BOOL enabled;
 @property(nonatomic) IBInspectable BOOL autoComplete;
@@ -97,9 +98,9 @@ IB_DESIGNABLE
 @property(nonatomic) IBInspectable BOOL secureTextEntry;
 @property(nonatomic) IBInspectable BOOL dividerAnimation;
 @property(nonatomic) IBInspectable BOOL restrictInBounds;
+@property(nonatomic, assign) IBInspectable UIKeyboardType keyboardType;
 
 @property(nonatomic) UIReturnKeyType returnKeyType;
-@property(nonatomic) UIKeyboardType keyboardType;
 
 @property(nonatomic) BOOL hasError;
 @property(nonnull, nonatomic) UIFont *labelsFont;
